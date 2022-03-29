@@ -1,0 +1,182 @@
+.hel {
+	width: 0;
+	height: 0;
+	line-height: 0 !important;
+	font-size: 0;
+	visibility: hidden;
+	opacity: 0;
+	text-indent: -9999px;
+}
+
+:root {
+	font: 1em $fb; // 16
+	color: $cb;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	background-color: $c4;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+@supports (display: flex) {
+	body {
+		display: flex;
+		min-height: 100vh;
+		min-height: -webkit-fill-available;
+		flex-direction: column;
+	}
+
+	header,
+	footer {
+		flex: 0 0 auto;
+	}
+
+	main {
+		flex: 1 0 auto;
+	}
+}
+
+picture::selection,
+img::selection,
+table th::selection,
+table td::selection,
+a::selection,
+strong::selection,
+b::selection,
+em::selection,
+span::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+li::selection,
+label::selection,
+input:not([type='checkbox']):not([type='radio'])::selection {
+	color: $cb;
+	background-color: $c3;
+}
+
+.container {
+	// outline: 1px dotted skyblue;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1400px;
+}
+
+@media (max-width: 1430px) {
+	.container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+a {
+	color: $c3;
+	@include trs-all;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+picture,
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+picture {
+	display: block;
+}
+
+b {
+	font-weight: 700;
+}
+
+.list-img {
+	position: relative;
+	overflow: hidden;
+
+	picture,
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include imgSt;
+	}
+}
+
+.disabled {
+	-webkit-pointer-events: none;
+	-moz-pointer-events: none;
+	pointer-events: none;
+}
+
+.visible {
+	opacity: 1 !important;
+	visibility: visible !important;
+	-webkit-transform: scaleY(1) !important;
+	transform: scaleY(1) !important;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100vh;
+	opacity: 0;
+	visibility: hidden;
+	background-color: rgba(34, 34, 34, 0.95);
+	pointer-events: none;
+	@include trs-all;
+}
+
+.overlay-visible {
+	z-index: 997;
+	visibility: visible;
+	opacity: 1;
+	pointer-events: initial;
+}
+
+.icon {
+	position: relative;
+	display: inline-block;
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		@include trs-all;
+	}
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}

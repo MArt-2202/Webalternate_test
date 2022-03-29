@@ -1,0 +1,26 @@
+@include font-face('Montserrat', 'Montserrat/MontserratLight/MontserratLight', 300, normal, swap);
+@include font-face(
+	'Montserrat',
+	'Montserrat/MontserratRegular/MontserratRegular',
+	400,
+	normal,
+	swap
+);
+@include font-face('Montserrat', 'Montserrat/MontserratMedium/MontserratMedium', 500, normal, swap);
+@include font-face(
+	'Montserrat',
+	'Montserrat/MontserratSemiBold/MontserratSemiBold',
+	600,
+	normal,
+	swap
+);
+@include font-face('Montserrat', 'Montserrat/MontserratBold/MontserratBold', 700, normal, swap);
+
+@include font-face('Roboto', 'Roboto/RobotoLight/RobotoLight', 300, normal, swap);
+@include font-face(
+	'SourceSansPro',
+	'SourceSansPro/SourceSansProLight/SourceSansProLight',
+	300,
+	normal,
+	swap
+);

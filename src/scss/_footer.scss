@@ -1,0 +1,9 @@
+footer {
+	opacity: 0;
+}
+
+@supports (display: flex) {
+	footer {
+		opacity: 1;
+	}
+}
