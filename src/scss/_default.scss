@@ -17,6 +17,7 @@
 body {
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
+	background-color: $c17;
 }
 
 *,
@@ -79,16 +80,6 @@ input:not([type='checkbox']):not([type='radio'])::selection {
 
 .container-md {
 	max-width: 1110px;
-}
-
-main {
-	padding-top: 50px;
-}
-
-@media (min-width: 1401px) {
-	main {
-		padding-top: 90px;
-	}
 }
 
 @media (max-width: 1430px) {
@@ -199,6 +190,81 @@ a {
 	&:hover {
 		color: $c15;
 	}
+}
+
+input,
+button,
+textarea,
+select {
+	padding: 0;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	background: transparent;
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+}
+
+input:not([type='checkbox']):not([type='radio']),
+textarea,
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+::-webkit-input-placeholder {
+	color: $cb;
+	text-overflow: ellipsis;
+}
+
+::-moz-placeholder {
+	opacity: 1;
+	color: $cb;
+	text-overflow: ellipsis;
+}
+
+:-moz-placeholder {
+	opacity: 1;
+	color: $cb;
+	text-overflow: ellipsis;
+}
+
+-o-input-placeholder {
+	color: $cb;
+	text-overflow: ellipsis;
+}
+
+-ms-input-placeholder {
+	color: $cb;
+	text-overflow: ellipsis;
+}
+
+:focus::-webkit-input-placeholder {
+	color: transparent !important;
+}
+
+:focus::-moz-placeholder {
+	color: transparent !important;
+}
+
+:focus:-moz-placeholder {
+	color: transparent !important;
+}
+
+:focus -o-input-placeholder {
+	color: transparent !important;
+}
+
+:focus -ms-input-placeholder {
+	color: transparent !important;
 }
 
 picture,
