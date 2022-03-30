@@ -1,9 +1,9 @@
 .pay-variants {
 	position: relative;
 	padding-top: 85px;
-	padding-bottom: 75px;
+	padding-bottom: 60px;
 	background: url(../img/bg-7--mobile.png) no-repeat 50% 50%;
-	background-size: auto auto;
+	background-size: cover;
 
 	.container-md {
 		position: relative;
@@ -51,7 +51,7 @@
 @media (min-width: 577px) {
 	.pay-variants {
 		background: url(../img/bg-7.png) no-repeat 50% 50%;
-		background-size: auto auto;
+		background-size: cover;
 	}
 
 	.pay-variants__content {
@@ -99,6 +99,7 @@
 
 @media (min-width: 769px) {
 	.pay-variants__content {
+		padding-bottom: 75px;
 		text-align: left;
 		opacity: 0;
 
