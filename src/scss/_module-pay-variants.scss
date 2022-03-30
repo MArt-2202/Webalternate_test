@@ -1,18 +1,8 @@
 .pay-variants {
-	position: relative;
 	padding-top: 85px;
 	padding-bottom: 60px;
 	background: url(../img/bg-7--mobile.png) no-repeat 50% 50%;
 	background-size: cover;
-
-	.container-md {
-		position: relative;
-		z-index: 1;
-	}
-}
-
-.pay-variants__geometry {
-	display: none;
 }
 
 .pay-variants__mobile-img {
@@ -87,11 +77,11 @@
 	.pay-variants__content {
 		> div {
 			&:first-child {
-				width: percentage(395 / 1100);
+				width: percentage(505 / 1100);
 			}
 
 			&:last-child {
-				padding-left: percentage(124 / 1100);
+				padding-left: percentage(45 / 1100);
 			}
 		}
 	}
@@ -178,10 +168,13 @@
 	.pay-variants {
 		padding-top: 185px;
 		padding-bottom: 105px;
-		overflow: hidden;
 
 		.tabs__list {
 			margin-top: -40px;
+		}
+
+		.geometry__item-7 {
+			bottom: 375px;
 		}
 	}
 
@@ -194,65 +187,12 @@
 			}
 		}
 	}
-
-	.pay-variants__geometry {
-		display: block;
-		position: absolute;
-	}
-
-	.pay-variants__geometry-1 {
-		top: 216px;
-		left: 100px;
-		width: 104px;
-		height: 101px;
-		background: url(../img/geometry-img-1.svg) no-repeat;
-	}
-
-	.pay-variants__geometry-2 {
-		top: 50px;
-		right: calc((100% - 1110px) / 2 + 300px);
-		width: 88px;
-		height: 65px;
-		background: url(../img/geometry-img-2.svg) no-repeat;
-	}
-
-	.pay-variants__geometry-3 {
-		top: 10px;
-		right: 10px;
-		width: 115px;
-		height: 116px;
-		background: url(../img/geometry-img-3.svg) no-repeat;
-	}
-
-	.pay-variants__geometry-4 {
-		left: 5px;
-		bottom: 135px;
-		width: 105px;
-		height: 155px;
-		background: url(../img/geometry-img-4.svg) no-repeat;
-	}
-
-	.pay-variants__geometry-5 {
-		left: calc((100% - 1110px) / 2);
-		bottom: 15%;
-		width: 34px;
-		height: 33px;
-		background: url(../img/geometry-img-5.svg) no-repeat;
-	}
-
-	.pay-variants__geometry-6 {
-		bottom: 30px;
-		right: calc((100% - 1110px) / 2);
-		width: 210px;
-		height: 184px;
-		background: url(../img/geometry-img-6.svg) no-repeat;
-	}
 }
 
 @media (min-width: 1141px) {
 	.pay-variants__tabs {
-		margin-left: -37px;
-		width: calc(100% + 37px);
+		margin-left: -120px;
+		width: calc(100% + 120px);
 	}
 
 	.pay-variants {
@@ -276,11 +216,11 @@
 	.pay-variants__content {
 		> div {
 			&:first-child {
-				width: percentage(395 / 1147);
+				width: percentage(505 / 1147);
 			}
 
 			&:last-child {
-				padding-left: percentage(124 / 1147);
+				padding-left: percentage(45 / 1147);
 			}
 		}
 	}
