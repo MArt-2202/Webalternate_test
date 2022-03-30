@@ -1,8 +1,19 @@
 .pay-variants {
+	position: relative;
 	padding-top: 85px;
 	padding-bottom: 60px;
-	background: url(../img/bg-7--mobile.png) no-repeat 50% 50%;
-	background-size: cover;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background: url(../img/bg-7--mobile.png) no-repeat 50% 50%;
+		background-size: cover;
+	}
 }
 
 .pay-variants__mobile-img {
@@ -40,8 +51,10 @@
 
 @media (min-width: 577px) {
 	.pay-variants {
-		background: url(../img/bg-7.png) no-repeat 50% 50%;
-		background-size: cover;
+		&:after {
+			background: url(../img/bg-7.png) no-repeat 50% 50%;
+			background-size: cover;
+		}
 	}
 
 	.pay-variants__content {
