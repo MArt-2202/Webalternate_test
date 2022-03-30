@@ -35,4 +35,12 @@ export default function tabs({
 			});
 		});
 	}
+
+	if (document.querySelector('.tabs') && window.matchMedia('(max-width: 768px)').matches) {
+		document.querySelectorAll(tabsList).forEach((tab) => {
+			tab.querySelectorAll('.tabs__content > div').forEach(
+				(content) => (content.style.display = 'block')
+			);
+		});
+	}
 }
