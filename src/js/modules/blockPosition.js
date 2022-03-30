@@ -9,7 +9,10 @@ export default function blockPosition() {
 		bl8 = document.querySelector('.top-section__bl-2'),
 		bl9 = document.querySelector('.top-section__bl-1 h1'),
 		bl10 = document.querySelector('.callback-form label'),
-		bl11 = document.querySelector('.callback-form div');
+		bl11 = document.querySelector('.callback-form div'),
+		bl12 = document.querySelector('.feedback__anchor'),
+		bl13 = document.querySelector('.feedback__help'),
+		bl14 = document.querySelector('.feedback__add');
 
 	if (window.matchMedia('(min-width: 1401px)').matches) {
 		document.body.classList.remove('mobile-xs');
@@ -67,6 +70,10 @@ export default function blockPosition() {
 				if (bl10 && bl11) {
 					bl11.before(bl10);
 				}
+
+				if (bl12 && bl13) {
+					bl12.after(bl13);
+				}
 			}
 		}
 	}
@@ -106,6 +113,10 @@ export default function blockPosition() {
 
 				if (bl10 && bl11) {
 					bl11.after(bl10);
+				}
+
+				if (bl13 && bl14) {
+					bl14.after(bl13);
 				}
 			}
 		}
