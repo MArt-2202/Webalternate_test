@@ -1,0 +1,58 @@
+.tabs__list {
+	display: none;
+}
+
+@media (min-width: 769px) {
+	.tabs__list {
+		display: block;
+		text-align: center;
+
+		li + li {
+			margin-left: 87px;
+		}
+
+		li {
+			position: relative;
+			display: inline-block;
+			padding: 5px;
+			vertical-align: top;
+			font-size: 1.125rem; // 18 / 16
+			line-height: 1;
+			color: rgba($cb, 0.4);
+			cursor: pointer;
+			@include trs-all;
+
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 1px;
+				left: 5px;
+				right: 5px;
+				height: 1px;
+				background-color: rgba($cb, 0.4);
+				@include trs-all;
+			}
+
+			&:hover,
+			&.active {
+				color: $c3;
+
+				&:after {
+					background-color: $c3;
+				}
+			}
+
+			&.active {
+				-webkit-pointer-events: none;
+				-moz-pointer-events: none;
+				pointer-events: none;
+			}
+		}
+	}
+
+	.tabs__content {
+		> div {
+			display: none;
+		}
+	}
+}
