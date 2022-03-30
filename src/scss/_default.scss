@@ -316,7 +316,8 @@ b {
 	height: 100vh;
 	opacity: 0;
 	visibility: hidden;
-	background-color: rgba($c2, 0.95);
+	background-color: rgba($c1, 0.2);
+	backdrop-filter: blur(15px);
 	pointer-events: none;
 	@include trs-all;
 }
