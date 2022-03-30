@@ -4,11 +4,13 @@ import footerToBottomPage from './modules/footerToBottomPage';
 import blockPosition from './modules/blockPosition';
 import blockStyles from './modules/blockStyles';
 import tabs from './modules/tabs';
+import masketInput from './modules/masketInput';
 import toggleContent from './modules/toggleContent';
 
 document.addEventListener('DOMContentLoaded', () => {
 	toggleContent();
 	blockStyles();
+	masketInput();
 	debounce(function () {
 		blockPosition();
 		footerToBottomPage();
