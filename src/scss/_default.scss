@@ -44,8 +44,6 @@ body {
 	}
 }
 
-picture::selection,
-img::selection,
 table th::selection,
 table td::selection,
 a::selection,
@@ -60,6 +58,8 @@ h4::selection,
 h5::selection,
 h6::selection,
 p::selection,
+span::selection,
+strong::selection,
 li::selection,
 label::selection,
 input:not([type='checkbox']):not([type='radio'])::selection {
