@@ -8,10 +8,6 @@ export default function toggleContent() {
 
 				document.body.style.overflowY = '';
 				document.body.style.paddingRight = '';
-
-				if (window.matchMedia('(max-width: 1200px)').matches) {
-					document.body.classList.remove('body-toggle');
-				}
 			});
 		}
 		if ('ontouchstart' in document.documentElement) {
@@ -43,14 +39,6 @@ export default function toggleContent() {
 							document.body.style.paddingRight =
 								window.innerWidth - document.documentElement.clientWidth + 'px';
 							document.body.style.overflowY = 'hidden';
-
-							if (window.matchMedia('(max-width: 1200px)').matches) {
-								document.body.classList.toggle('body-toggle');
-							}
-
-							if (window.matchMedia('(min-width: 1201px)').matches) {
-								document.body.classList.remove('body-toggle');
-							}
 						} else {
 							if (!document.querySelector('.modal-overlay.show')) {
 								document.body.style.overflowY = '';
@@ -76,26 +64,10 @@ export default function toggleContent() {
 						document.body.style.paddingRight =
 							window.innerWidth - document.documentElement.clientWidth + 'px';
 						document.body.style.overflowY = 'hidden';
-
-						if (window.matchMedia('(max-width: 1200px)').matches) {
-							document.body.classList.toggle('body-toggle');
-						}
-
-						if (window.matchMedia('(min-width: 1201px)').matches) {
-							document.body.classList.remove('body-toggle');
-						}
 					} else {
 						if (!document.querySelector('.modal-overlay.show')) {
 							document.body.style.overflowY = '';
 							document.body.style.paddingRight = '';
-
-							if (window.matchMedia('(max-width: 1200px)').matches) {
-								document.body.classList.toggle('body-toggle');
-							}
-
-							if (window.matchMedia('(min-width: 1201px)').matches) {
-								document.body.classList.remove('body-toggle');
-							}
 						}
 					}
 				}
@@ -105,17 +77,12 @@ export default function toggleContent() {
 					toggleContent.classList.remove('content-visible'),
 						overlay.classList.remove('overlay-visible');
 
-					if (window.matchMedia('(max-width: 1200px)').matches) {
-						document.body.classList.remove('body-toggle');
-					}
-
-					if (!document.querySelector('.modal-overlay.show')) {
+					if (
+						!document.querySelector('.modal-overlay.show') &&
+						window.matchMedia('(max-width: 1400px)').matches
+					) {
 						document.body.style.overflowY = '';
 						document.body.style.paddingRight = '';
-
-						if (window.matchMedia('(max-width: 1200px)').matches) {
-							document.body.classList.remove('body-toggle');
-						}
 					}
 				}
 			};
