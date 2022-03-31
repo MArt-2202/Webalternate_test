@@ -366,15 +366,11 @@ textarea {
 			opacity: 0;
 			-webkit-transform: translate(-50%, -50%) scale(0);
 			transform: translate(-50%, -50%) scale(0);
-			font-family: 'iconfonts';
-			font-style: normal;
-			font-weight: normal;
+			font: normal normal 11px/1 'iconfonts';
 			font-variant: normal;
-			text-transform: none;
-			line-height: 1;
+			text-transform: initial;
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
-			font-size: 11px;
 			color: $c23;
 			@include trs;
 		}
@@ -421,6 +417,10 @@ b {
 	}
 }
 
+.dn {
+	display: none;
+}
+
 .disabled {
 	-webkit-pointer-events: none;
 	-moz-pointer-events: none;
@@ -445,6 +445,8 @@ b {
 	visibility: hidden;
 	background-color: rgba($c1, 0.2);
 	backdrop-filter: blur(15px);
+	-webkit-pointer-events: none;
+	-moz-pointer-events: none;
 	pointer-events: none;
 	@include trs-all;
 }
