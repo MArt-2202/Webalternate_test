@@ -21,9 +21,9 @@ if (isMobile()) {
 document.addEventListener('DOMContentLoaded', () => {
 	sliders();
 	toggleContent();
-	blockStyles();
 	masketInput();
 	debounce(function () {
+		blockStyles();
 		blockPosition();
 		footerToBottomPage();
 		tabs({});
@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }); // END READY
 window.addEventListener('resize', () => {
 	debounce(function () {
+		blockStyles();
 		blockPosition();
 		footerToBottomPage();
 		tabs({});
