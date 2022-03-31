@@ -52,7 +52,7 @@
 @media (min-width: 577px) {
 	.pay-variants {
 		&:after {
-			background: url(../img/bg-7.png) no-repeat 50% 50%;
+			background: url(../img/bg-7.png) no-repeat 50% 50% $c8;
 			background-size: cover;
 		}
 	}

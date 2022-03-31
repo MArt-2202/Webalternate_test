@@ -110,11 +110,11 @@
 		position: relative;
 
 		h2 {
-			margin-bottom: 121px;
+			margin-bottom: 14px;
 		}
 
 		&:after {
-			background: url(../img/bg-10.png) no-repeat 50% 0;
+			background: url(../img/bg-10.png) no-repeat 50% 0 $c8;
 			background-size: cover;
 		}
 	}
@@ -154,7 +154,7 @@
 		padding-bottom: 100px;
 
 		h2 {
-			margin-bottom: 50px;
+			margin-bottom: 120px;
 		}
 	}
 
