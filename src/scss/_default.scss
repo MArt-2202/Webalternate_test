@@ -245,7 +245,7 @@ textarea {
 		border: 1px solid $c22;
 
 		&:focus {
-			border-color: $c15;
+			border-color: $c3;
 		}
 	}
 
@@ -485,17 +485,19 @@ b {
 	display: none;
 }
 
+.geometry {
+	.container,
+	.container-md,
+	.container-lg {
+		position: relative;
+		z-index: 2;
+	}
+}
+
 @media (min-width: 1025px) {
 	.geometry {
 		position: relative;
 		overflow: hidden;
-
-		.container,
-		.container-md,
-		.container-lg {
-			position: relative;
-			z-index: 2;
-		}
 	}
 
 	.geometry__item {
