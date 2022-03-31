@@ -70,6 +70,16 @@
 			margin-bottom: 0;
 		}
 	}
+
+	&.modal-content-style-1 {
+		background-color: $cb;
+		box-shadow: 2px 2px 10px rgba($c1, 0.1);
+
+		h3,
+		p {
+			color: $c1;
+		}
+	}
 }
 
 .show {
