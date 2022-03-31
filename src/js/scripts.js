@@ -6,6 +6,7 @@ import blockStyles from './modules/blockStyles';
 import tabs from './modules/tabs';
 import sliders from './modules/sliders';
 import masketInput from './modules/masketInput';
+import modal from './modules/modal';
 import toggleContent from './modules/toggleContent';
 
 function isMobile(agent) {
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	sliders();
 	toggleContent();
 	masketInput();
+	modal();
 	debounce(function () {
 		blockStyles();
 		blockPosition();
