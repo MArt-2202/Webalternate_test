@@ -3,6 +3,7 @@ export default function modal() {
 		document.querySelectorAll('.modal-btn').forEach((el) => {
 			el.addEventListener('click', function (e) {
 				e.preventDefault();
+				e.preventDefault();
 				if (el.dataset.modalBtn !== '') {
 					const targetModal = document.querySelector(`[data-modal="${el.dataset.modalBtn}"]`);
 
@@ -10,6 +11,8 @@ export default function modal() {
 					setTimeout(() => {
 						targetModal.classList.add('show');
 					}, 50);
+
+					console.log('Open');
 
 					document.body.style.paddingRight =
 						window.innerWidth - document.documentElement.clientWidth + 'px';
@@ -32,8 +35,10 @@ export default function modal() {
 						el.classList.add('dn');
 					}, 200);
 
-					document.body.style.overflowY = 'auto';
+					document.body.style.overflowY = '';
 					document.body.style.paddingRight = '';
+
+					console.log('Close');
 				}
 			});
 		});
