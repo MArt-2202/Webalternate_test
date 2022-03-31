@@ -99,6 +99,17 @@
 	}
 }
 
+@media (min-width: 577px) and (max-width: 768px) {
+	.feedback__content {
+		> div {
+			&:last-child {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}
+
 @media (min-width: 769px) {
 	.feedback {
 		&:after {
@@ -141,7 +152,6 @@
 	}
 
 	.feedback__add {
-		padding: 50px 46px;
 		border-width: 4px;
 
 		strong {
@@ -235,5 +245,6 @@
 
 	.feedback__add {
 		max-width: 635px;
+		padding: 50px 46px;
 	}
 }
