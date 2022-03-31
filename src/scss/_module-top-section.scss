@@ -84,6 +84,26 @@
 			}
 		}
 	}
+
+	::-webkit-input-placeholder {
+		color: $cb;
+	}
+
+	::-moz-placeholder {
+		color: $cb;
+	}
+
+	:-moz-placeholder {
+		color: $cb;
+	}
+
+	-o-input-placeholder {
+		color: $cb;
+	}
+
+	-ms-input-placeholder {
+		color: $cb;
+	}
 }
 
 @media (min-width: 321px) {
