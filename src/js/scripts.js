@@ -8,6 +8,16 @@ import sliders from './modules/sliders';
 import masketInput from './modules/masketInput';
 import toggleContent from './modules/toggleContent';
 
+function isMobile(agent) {
+	if (agent === void 0) agent = navigator.userAgent;
+
+	return /Android|iPhone|iPad|iPod/i.test(agent);
+}
+
+if (isMobile()) {
+	document.body.classList.add('mobile-user-agent');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	sliders();
 	toggleContent();
