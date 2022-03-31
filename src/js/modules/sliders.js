@@ -62,4 +62,59 @@ export default function sliders() {
 			},
 		});
 	}
+
+	if (document.querySelector('.case-slider')) {
+		new Swiper('.case-slider', {
+			// forceToAxis: true,
+			// autoplay: {
+			// 	delay: 4500,
+			// 	disableOnInteraction: false,
+			// },
+			on: {
+				init() {
+					if (document.querySelector('.case-slider-wrapper')) {
+						document.querySelector('.case-slider-wrapper').classList.remove('style-1');
+					}
+				},
+			},
+			slidesPerView: 4,
+			spaceBetween: 31,
+			// loop: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+				// hide: true,
+			},
+			breakpoints: {
+				1200: {
+					slidesPerView: 4,
+					spaceBetween: 31,
+				},
+				1024: {
+					slidesPerView: 3,
+					spaceBetween: 31,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 31,
+				},
+				576: {
+					slidesPerView: 2,
+					spaceBetween: 31,
+				},
+				415: {
+					slidesPerView: 1,
+					spaceBetween: 17,
+				},
+				300: {
+					slidesPerView: 1,
+					spaceBetween: 17,
+				},
+			},
+		});
+	}
 }
