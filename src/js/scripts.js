@@ -21,7 +21,6 @@ if (isMobile()) {
 
 document.addEventListener('DOMContentLoaded', () => {
 	sliders();
-	toggleContent();
 	masketInput();
 	modal();
 	debounce(function () {
@@ -29,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		blockPosition();
 		footerToBottomPage();
 		tabs({});
+		toggleContent();
 	}, 200);
 }); // END READY
 window.addEventListener('resize', () => {
@@ -37,6 +37,7 @@ window.addEventListener('resize', () => {
 		blockPosition();
 		footerToBottomPage();
 		tabs({});
+		toggleContent();
 	}, 200);
 });
 
