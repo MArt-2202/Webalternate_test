@@ -12,8 +12,6 @@ export default function modal() {
 						targetModal.classList.add('show');
 					}, 50);
 
-					console.log('Open');
-
 					document.body.style.paddingRight =
 						window.innerWidth - document.documentElement.clientWidth + 'px';
 					document.body.style.overflowY = 'hidden';
@@ -37,8 +35,6 @@ export default function modal() {
 
 					document.body.style.overflowY = '';
 					document.body.style.paddingRight = '';
-
-					console.log('Close');
 				}
 			});
 		});
