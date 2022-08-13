@@ -78,7 +78,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
 	.pay-variants__content {
-		> div {
+		>div {
 			&:last-child {
 				padding-left: 40px;
 			}
@@ -88,13 +88,13 @@
 
 @media (min-width: 769px) and (max-width: 1140px) {
 	.pay-variants__content {
-		> div {
+		>div {
 			&:first-child {
-				width: percentage(505 / 1100);
+				width: mp(505, 1100);
 			}
 
 			&:last-child {
-				padding-left: percentage(45 / 1100);
+				padding-left: mp(45, 1100);
 			}
 		}
 	}
@@ -151,7 +151,7 @@
 			align-items: center;
 			opacity: 1;
 
-			> div {
+			>div {
 				&:first-child {
 					flex: none;
 				}
@@ -169,7 +169,7 @@
 			width: 100%;
 			opacity: 1;
 
-			> div {
+			>div {
 				display: table-cell;
 				vertical-align: middle;
 			}
@@ -192,7 +192,7 @@
 	}
 
 	.pay-variants__content {
-		> div {
+		>div {
 			&:last-child {
 				section {
 					margin-top: -18%;
@@ -210,10 +210,10 @@
 
 	.pay-variants {
 		.tabs__content {
-			> div {
+			>div {
 				&:last-child {
 					.pay-variants__content {
-						> div {
+						>div {
 							&:last-child {
 								section {
 									margin-top: calc(-18% + 20px);
@@ -227,13 +227,13 @@
 	}
 
 	.pay-variants__content {
-		> div {
+		>div {
 			&:first-child {
-				width: percentage(505 / 1147);
+				width: mp(505, 1147);
 			}
 
 			&:last-child {
-				padding-left: percentage(45 / 1147);
+				padding-left: mp(45, 1147);
 			}
 		}
 	}
@@ -242,7 +242,7 @@
 @media (max-width: 768px) {
 	.pay-variants__tabs {
 		.tabs__content {
-			> div + div {
+			>div+div {
 				position: relative;
 				margin-top: 40px;
 				padding-top: 32px;

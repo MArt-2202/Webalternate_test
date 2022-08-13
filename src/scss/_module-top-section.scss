@@ -3,7 +3,7 @@
 	background-size: cover;
 
 	.icon-basket,
-	h1 + strong {
+	h1+strong {
 		display: block;
 	}
 
@@ -27,7 +27,7 @@
 		line-height: 70px;
 	}
 
-	h1 + strong {
+	h1+strong {
 		display: block;
 		font-size: 1.25rem; // 20 / 16
 		font-weight: 400;
@@ -164,9 +164,9 @@
 		min-height: 100vh;
 		opacity: 0;
 
-		> div {
+		>div {
 			&:last-child {
-				width: percentage(620/1400);
+				width: mp(620, 1400);
 				padding-top: 20px;
 				padding-right: 20px;
 				background: url(../img/bg-4.png) no-repeat 100% 0;
@@ -180,7 +180,7 @@
 			display: flex;
 			opacity: 1;
 
-			> div {
+			>div {
 				&:first-child {
 					flex-grow: 1;
 					display: flex;
@@ -200,11 +200,11 @@
 			@include clearfix;
 			opacity: 1;
 
-			> div {
+			>div {
 				float: left;
 
 				&:first-child {
-					width: percentage(830/1400);
+					width: mp(830, 1400);
 				}
 			}
 		}
@@ -221,7 +221,7 @@
 		padding-top: 175px;
 		padding-bottom: 22px;
 
-		> div {
+		>div {
 			&:first-child {
 				padding-top: 122px;
 				padding-bottom: 152px;
@@ -234,18 +234,18 @@
 	.top-section__content {
 		width: calc(100% + 50px);
 
-		> div {
+		>div {
 			&:last-child {
-				width: percentage(620/1450);
+				width: mp(620, 1450);
 			}
 		}
 	}
 
 	@supports not (display: flex) {
 		.top-section__content {
-			> div {
+			>div {
 				&:first-child {
-					width: percentage(830/1450);
+					width: mp(830, 1450);
 				}
 			}
 		}
@@ -270,7 +270,7 @@
 	}
 
 	.callback-form {
-		div + label {
+		div+label {
 			display: block;
 			margin-top: 11px;
 			margin-bottom: 0;
@@ -281,7 +281,7 @@
 	}
 
 	.top-section__bl-1 {
-		h1 + .top-section__bl-2 {
+		h1+.top-section__bl-2 {
 			position: relative;
 			display: table;
 			max-width: 62.5%;
@@ -323,7 +323,7 @@
 	}
 
 	.top-section__bl-1 {
-		h1 + .top-section__bl-2 {
+		h1+.top-section__bl-2 {
 			margin-top: 0;
 		}
 	}
@@ -344,7 +344,7 @@
 	}
 
 	.top-section__bl-1 {
-		h1 + .top-section__bl-2 {
+		h1+.top-section__bl-2 {
 			max-width: 200px;
 			margin-bottom: 5px;
 		}
