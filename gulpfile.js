@@ -1,6 +1,7 @@
 'use strict';
 
 const gulp = require('gulp'),
+	sass = require('gulp-sass')(require('sass')),
 	{ src, dest, parallel, series, watch } = require('gulp'),
 	dirs = {
 		source: 'src',
@@ -104,13 +105,7 @@ const styles = async () => {
 			.pipe($.plumber())
 			.pipe($.if(!argv.prod, $.sourcemaps.init()))
 			.pipe($.wait(250))
-			.pipe(
-				$.sass({
-					//includePaths: ['css'], // for work sourcemap after *.scss change
-					// outputStyle: 'compressed'
-					// onError: browserSync.notify,
-				})
-			)
+			.pipe(sass().on('error', sass.logError))
 			.pipe(
 				$.if(
 					argv.prod,
